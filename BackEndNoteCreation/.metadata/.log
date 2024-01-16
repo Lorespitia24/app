@@ -149,3 +149,71 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:40:50.375
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:40:50.378
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5b404047[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=923)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:40:50.394
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:40:50.710
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:40:58.748
+!MESSAGE Boot LS startup time from start to initialized: 8317ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.150
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QPBEkuUJisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.159
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.169
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.184
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.185
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.187
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QPBEkuUJ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.613
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.680
+!MESSAGE buffering callback sts4.classpath.QPBEkuUJ BackEndNoteCreation false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:00.684
+!MESSAGE executing callback sts4.classpath.QPBEkuUJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-01-16 14:41:02.772
+!MESSAGE executing callback sts4.classpath.QPBEkuUJ FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-01-16 14:41:02.777
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2024-01-16 14:48:21.634
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-16 14:50:56.795
+!MESSAGE [Log]	Error: Unauthorized
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-16 14:50:58.927
+!MESSAGE [Log]	Error: Unauthorized
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-01-16 14:51:05.198
+!MESSAGE [Log]	Error: Unauthorized
